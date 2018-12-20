@@ -1,0 +1,76 @@
+body {
+    background-color:black;
+}
+
+.container {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 4fr 4fr 4fr 4fr 1fr 2fr 1fr 4fr 4fr 4fr 4fr;
+    grid-template-areas:
+        "compUsed4  blank1  compCard1  compCard1  compCard2  compCard2  compCard3  compCard3   blank1    blank1"
+        "compUsed3  blank1  compCard1  compCard1  compCard2  compCard2  compCard3  compCard3   blank1    blank1"
+        "compUsed2  blank1  compCard1  compCard1  compCard2  compCard2  compCard3  compCard3   blank1    blank1"
+        "compUsed1  blank1   blank1     blank1     blank1      blank1    blank1     blank1     blank1    blank1"
+        "scoreBox  scoreBox  blank1     blank1     blank1      blank1    blank1     blank1     blank1    blank1"
+        "scoreBox  scoreBox  blank1     blank1     blank1      blank1    blank1     blank1     blank1    blank1"
+        "scoreBox  scoreBox  blank1     blank1     blank1      blank1    blank1     blank1     blank1    blank1"
+        "playUsed1  blank1   blank1     blank1     blank1      blank1    blank1     blank1     blank1    blank1"
+        "playUsed2  blank1   blank1    playCard1  playCard1  playCard2  playCard2  playCard3  playCard3  blank1"
+        "playUsed3  blank1   blank1    playCard1  playCard1  playCard2  playCard2  playCard3  playCard3  blank1"
+        "playUsed4  blank1   blank1    playCard1  playCard1  playCard2  playCard2  playCard3  playCard3  blank1"
+}
+
+/* .itm {
+    background:white;
+} */
+
+div {
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding:10px;
+}
+
+/* PLAYER CARDS */
+.itm45, .itm46, .itm47{
+    grid-area:"playCard1";
+    grid-column: span 2;
+    grid-row:span 3;
+    background-color:white;
+}
+
+/* COMPUTER CARDS */
+.itm3, .itm4, .itm5{
+    grid-area:"compCard1";
+    grid-column: span 2;
+    grid-row:span 3;
+    background-color:white;
+}
+
+/* RECENTLY PLAYED CARDS */
+.compUsed, .itm50, .itm37, .itm43, .itm54 {
+    background-color:gray;
+}
+
+/* SCOREBOARD */
+.scoreBox{
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color:gray;
+}
+
+/* GAME BOARD */
+.compPlay, .playPlay {
+    grid-column: span 2;
+    grid-row: span 5;
+    background-color:white;
+}
+
+h4, h3{
+    margin:0;
+}
+
+.itm31 {
+    grid-column: span 2;
+    background-color:gray;
+}
